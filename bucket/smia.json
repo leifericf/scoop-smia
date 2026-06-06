@@ -11,7 +11,8 @@
     ],
     "bin": "smia.cmd",
     "checkver": {
-        "github": "https://github.com/leifericf/smia"
+        "github": "https://github.com/leifericf/smia",
+        "regex": "/releases/tag/(\\d{4}-\\d{2}-\\d{2})"
     },
     "autoupdate": {
         "url": "https://github.com/leifericf/smia/releases/download/$version/smia.jar"
