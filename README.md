@@ -14,10 +14,6 @@ scoop install smia
 The manifest installs the release jar and a `smia` shim, and pulls a Temurin
 JRE from the `java` bucket as a dependency.
 
-> **Note:** the manifest activates with the first release that ships a
-> `smia.jar` asset. Until then, install from a [release jar or
-> source](https://github.com/leifericf/smia#readme).
-
 The manifest pins one release by URL and hash. New Smia releases bump
 `version`, `url`, and `hash` in `bucket/smia.json` (the checksum is printed by
 the release workflow in the main repository); `checkver`/`autoupdate` keep the
