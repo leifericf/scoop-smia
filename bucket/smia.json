@@ -1,0 +1,19 @@
+{
+    "version": "2026-06-05",
+    "description": "Builds technical books as PDF, EPUB, and a static site on the JVM",
+    "homepage": "https://smia.leifericf.com",
+    "license": "EPL-2.0",
+    "depends": "java/temurin-lts-jre",
+    "url": "https://github.com/leifericf/smia/releases/download/2026-06-05/smia.jar",
+    "hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "pre_install": [
+        "Set-Content -Path \"$dir\\smia.cmd\" -Value '@java -jar \"%~dp0smia.jar\" %*'"
+    ],
+    "bin": "smia.cmd",
+    "checkver": {
+        "github": "https://github.com/leifericf/smia"
+    },
+    "autoupdate": {
+        "url": "https://github.com/leifericf/smia/releases/download/$version/smia.jar"
+    }
+}
